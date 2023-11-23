@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34004.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astana.hotel", "ProjectHotel\Astana.hotel.csproj", "{0DC5C5D3-F3D4-4D3F-B2AE-28F02A317EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astana.BLL", "BLL\Astana.BLL.csproj", "{5B1267EB-C14B-47CA-8529-881F218FAEA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astana.DAL", "DAL\Astana.DAL.csproj", "{4FCE806F-D911-42B1-969D-4588B475E959}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DC5C5D3-F3D4-4D3F-B2AE-28F02A317EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC5C5D3-F3D4-4D3F-B2AE-28F02A317EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC5C5D3-F3D4-4D3F-B2AE-28F02A317EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC5C5D3-F3D4-4D3F-B2AE-28F02A317EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1267EB-C14B-47CA-8529-881F218FAEA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1267EB-C14B-47CA-8529-881F218FAEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1267EB-C14B-47CA-8529-881F218FAEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1267EB-C14B-47CA-8529-881F218FAEA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FCE806F-D911-42B1-969D-4588B475E959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCE806F-D911-42B1-969D-4588B475E959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCE806F-D911-42B1-969D-4588B475E959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCE806F-D911-42B1-969D-4588B475E959}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E699EAA4-EBC2-4B48-9F0D-407FFD90A5FA}
+	EndGlobalSection
+EndGlobal
