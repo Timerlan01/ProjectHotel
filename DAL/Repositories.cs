@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LiteDB
+using DAL;
+using LiteDB;
 
 namespace Astana.DAL
 {
@@ -30,15 +31,18 @@ namespace Astana.DAL
         {
             try
             {
-                using (LiteDB db = new LiteDB(""))
+                using (LiteDatabase db = new LiteDatabase(""))
                 {
                     var coll = db.GetCollection<T>(typeof(T).Name);
                     coll.Delete(Id);
                 }
                 return true;
             }
+            catch(Exception ex)
+            {
 
             }
+        }
 
         public List<T> GetAll()
         {
