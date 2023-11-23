@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\Astana.BLL.csproj">
+      <Project>{5b1267eb-c14b-47ca-8529-881f218faea1}</Project>
+      <Name>Astana.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\Astana.DAL.csproj">
+      <Project>{4fce806f-d911-42b1-969d-4588b475e959}</Project>
+      <Name>Astana.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Module
 {
-    internal class Ferniture
+    public class Ferniture
     {
         public int Id { get; set; }
         public DateTime CreatDate { get; set; }

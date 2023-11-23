@@ -59,8 +59,8 @@ namespace BLL
             reserve.StartDate = startDate;
             reserve.EndDate = endDate;
 
-            if (RoomIsAvaliable(id))
-                return "При бронировании возникла ошибка";
+            if (!RoomIsAvaliable(id, startDate, endDate))
+                return "Комната на текущие даты занята";
 
             if (db.Create(reserve))
             {

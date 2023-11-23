@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Module
 {
-    class RoomProperty
+    public class RoomProperty
     {
         public int Id { get; set; }
         public DateTime CreatDate { get; set; }

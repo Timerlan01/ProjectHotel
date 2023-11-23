@@ -14,7 +14,7 @@ namespace Astana.DAL
         {
             try
             {
-                using (LiteDatabase db = new LiteDatabase(""))
+                using (LiteDatabase db = new LiteDatabase(@"C:\Temp\hotel.db"))
                 {
                     var coll = db.GetCollection<T>(typeof(T).Name);
                     coll.Insert(data);
@@ -48,13 +48,14 @@ namespace Astana.DAL
             {
 
             }
+            return true;
         }
 
         public List<T> GetAll()
         {
             try
             {
-                using (LiteDatabase db = new LiteDatabase(""))
+                using (LiteDatabase db = new LiteDatabase(@"C:\Temp\hotel.db"))
                 {
                     var collection = db.GetCollection<T>(typeof(T).Name);
 
