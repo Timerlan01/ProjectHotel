@@ -8,7 +8,7 @@ using LiteDB;
 
 namespace Astana.DAL
 {
-    class Repositories<T> : IRepository<T>
+    public class Repositories<T> : IRepository<T>
     {
         public bool Create(T data)
         {
@@ -21,8 +21,14 @@ namespace Astana.DAL
                 }
                 return true;
             }
-            catch
+            catch (LiteException ex)
             {
+                ///TODO
+                return false;
+            }
+            catch(Exception ex)
+            {
+                ///TODO
                 return false;
             }
         }
@@ -46,7 +52,19 @@ namespace Astana.DAL
 
         public List<T> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (LiteDatabase db = new LiteDatabase(""))
+                {
+                    var collection = db.GetCollection<T>(typeof(T).Name);
+
+                    return collection.FindAll().ToList();
+                }//Dispose()
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public T GetById(int Id)

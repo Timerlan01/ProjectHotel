@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Module
 {
-    class Room
+   public class Room
     {
         public int Id { get; set; }
         public DateTime CreatDate { get; set; }
@@ -14,6 +14,7 @@ namespace DAL.Module
         public int Floor { get; set; }
         public int TypeRoom { get; set; }
         public double Price { get; set; }
+        public bool Avaliable { get; set; }
         public List<RoomProperty> RoomProperties { get; set; }
         public List<Ferniture> Fernituries { get; set; }
         public List <Reserve> Reserves { get; set; }    
